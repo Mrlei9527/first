@@ -11,6 +11,13 @@ export default {
             
         }
     },
+    computed:{
+        mapState:([
+            'nickname',
+            'age',
+            'gender'
+        ])
+    },
     mounted(){
         console.log(this.$store)
     },
