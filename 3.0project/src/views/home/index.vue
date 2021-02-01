@@ -1,4 +1,4 @@
-<<template>
+<template>
     <div class=''>
         hahahahahah
     </div>
@@ -10,6 +10,9 @@ export default {
         return {
             
         }
+    },
+    mounted(){
+        console.log(this.$store)
     },
     methods:{
 

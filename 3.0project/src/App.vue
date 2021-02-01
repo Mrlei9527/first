@@ -18,14 +18,12 @@ export default {
   },
   mounted() {
       window.addEventListener('message', function (event) {
-        console.log(event)
         if(event.data.type != "webpackOk"){
           this.user = {
             jfId: event.data.jfId,
             mobile: event.data.mobile
           }
         }
-        console.log(this.user)
       })
   },
 }
